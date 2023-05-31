@@ -47,6 +47,7 @@ export const Header = ({
 
   const handleConnectClick = async () => {
     try {
+      console.log('try to connect')
       await connectSnap();
       const installedSnap = await getSnap();
 

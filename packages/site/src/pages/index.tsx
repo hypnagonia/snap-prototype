@@ -129,12 +129,14 @@ const Index = () => {
   return (
     <Container>
       <Heading>
-        Welcome to <Span>template-snap</Span>
+        Welcome to <Span>Karma3Labs</Span> snap
       </Heading>
       <Subtitle>
         Get started by editing <code>src/index.ts</code>
       </Subtitle>
       <CardContainer>
+        {JSON.stringify(state)}
+
         {state.error && (
           <ErrorMessage>
             <b>An error happened:</b> {state.error.message}
